@@ -1,0 +1,48 @@
+<div class="container">
+    
+    
+    <nav >
+        <a routerLink="/adminlogin" class="btn btn-success">Logout</a>   
+    </nav>
+    <router-outlet></router-outlet>
+<br>
+    
+    <form>
+        <div class="Form-group">
+            <label for="ID">Schedule Flight ID :</label>
+            <input type ="text" class="form-control" id="ID">
+          </div>
+          <br>
+          <div class="Form-group">
+            <label for="source">Source Airport :</label>
+            <input type ="text" class="form-control" id="source">
+          </div>
+          <br>
+          <div class="Form-group">
+            <label for="destination">Destination Airport :</label>
+            <input type ="text" class="form-control" id="destination">
+          </div>
+          <br>
+          <div class="Form-group">
+            <label for="dp">Depature Time :</label>
+            <input type ="date" class="form-control" id="dp">
+          </div>
+          <br>
+          <div class="Form-group">
+            <label for="ap">Arrival Time :</label>
+            <input type ="date" class="form-control" id="ap">
+          </div>
+          <br>
+          <div class="Form-group">
+            <label for="cost"> Cost:</label>
+            <input type ="text" class="form-control" id="cost">
+          </div>
+          <br>
+          <div style="text-align: right;">
+        <button type="submit" class="btn btn-success">ADD</button>
+        </div>
+
+
+
+    </form>
+    </div>

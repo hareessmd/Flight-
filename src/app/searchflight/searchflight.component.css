@@ -1,0 +1,8 @@
+.topnav input[type=text] {
+    float: left;
+    padding: 6px;
+    border: darkgray;
+    margin-top: 0px;
+    margin-right: 5px;
+    font-size: 30px;
+  }

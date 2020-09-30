@@ -1,0 +1,32 @@
+<nav>
+    <a routerLink="/adminlogin" class="btn btn-success">Logout</a>   
+</nav>
+<router-outlet></router-outlet>
+
+<div class="main" class="jumbotron">
+    <h4>Welcome Admin</h4>
+       
+    <div>
+        <nav>
+            <a routerLink="/addflight" class="btn btn-primary">Add Flight</a> 
+        </nav>
+        <router-outlet></router-outlet>
+      
+        <nav >
+            <a routerLink="/addschedule" class="btn btn-primary">Schedule a Flight</a>   
+        </nav>
+        <router-outlet></router-outlet>
+      </div>
+      <div>
+        <nav >
+            <a routerLink="/searchflight" class="btn btn-primary">Search Flight</a>   
+        </nav>
+        <router-outlet></router-outlet>
+      
+        <nav>
+            <a routerLink="/searchschedule" class="btn btn-primary">Search Flight Schedule</a>
+        </nav>
+        <router-outlet></router-outlet>
+      </div>
+</div>
+

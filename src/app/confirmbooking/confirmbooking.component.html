@@ -1,0 +1,111 @@
+<div >
+    <form>
+      <div style="text-align: right;">
+        <nav>
+            <a routerLink="/custlogin" class="btn btn-success">Logout</a>
+            
+          </nav>
+          <router-outlet></router-outlet>
+        </div>
+        <h2 class="container">Booking Details:</h2>
+        <br>
+        <div class="container">
+        <h4>Passanger Details:</h4>
+        </div>
+        <div class="grid-container" >
+            <div class="grid-item">
+              <input type="text" value="Name">
+            </div>
+            <div class="grid-item">
+              <input type="number" value="Age">
+            </div>
+            <div class="grid-item">
+              <select value ="Gender">
+                <option *ngFor="let i of gender"[value]="i">{{i}}</option>
+              </select>
+          </div>
+          <div class="grid-item">
+            <input type="text" value="ID">
+          </div>
+          </div><br>
+          <div class="grid-container">
+            <div class="grid-item">
+              <input type="text" value="Name">
+            </div>
+            <div class="grid-item">
+              <input type="number" value="Age">
+            </div>
+            <div class="grid-item">
+              <select value ="Gender">
+                <option *ngFor="let i of gender"[value]="i">{{i}}</option>
+              </select>
+            </div>
+              <div class="grid-item">
+                <input type="text" value="ID">
+              </div>
+          
+          </div><br>
+          <div class="grid-container">
+            <div class="grid-item">
+              <input type="text" value="Name">
+            </div>
+            <div class="grid-item">
+              <input type="number" value="Age">
+            </div>
+            <div class="grid-item">
+              <select value ="Gender">
+                <option *ngFor="let i of gender"[value]="i">{{i}}</option>
+              </select>
+            </div>
+              <div class="grid-item">
+                <input type="text" value="ID">
+              </div>
+          
+          </div><br>
+          <div class="grid-container">
+            <div class="grid-item">
+              <input type="text" value="Name">
+            </div>
+            <div class="grid-item">
+              <input type="number" value="Age">
+            </div>
+            <div class="grid-item">
+              <select value ="Gender">
+                <option *ngFor="let i of gender"[value]="i">{{i}}</option>
+              </select>
+            </div>
+              <div class="grid-item">
+                <input type="text" value="ID">
+              </div>
+          
+          </div>
+          <h5 class="container">*Max 4 Passangers per booking</h5>
+          <div class="grid-container1">
+            <div class="grid-item1">
+              <label>Address:</label><br>
+              <input type="text" value="Address">
+            </div>
+            <div class="grid-item1">
+              <label>Contact Number:</label><br>
+              <input type="text" value="Contact Number">
+            </div>
+          </div>
+          <div class="container">
+          <h6>Booking Confirmation will be send to the above mentioned contact details.</h6>
+          </div>
+          <div class="container">
+            <input type ="checkbox">
+            <label>
+              I agree to the terms and conditions
+            </label>
+          </div>
+          <div style="text-align: center;">
+          <nav>
+            <a routerLink="/yourticket" class="btn btn-success">Confirm</a>
+            
+        </nav>
+        <router-outlet></router-outlet>
+      </div>
+    </form>
+</div>
+

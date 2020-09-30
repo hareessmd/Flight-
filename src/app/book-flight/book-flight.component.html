@@ -1,0 +1,50 @@
+<div class="container">
+    
+    <form>
+        <h2>Book Flights :</h2> 
+        <div style="text-align: right;">
+        <nav>
+            <a routerLink="/custlogin" class="btn btn-success">Logout</a>
+            
+          </nav>
+          <router-outlet></router-outlet>
+        </div>
+        <div class="form-group">
+            <label>FROM :</label>
+            <select class="form-control">
+              <option *ngFor="let i of city"[value]="i">{{i}}</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>TO :</label>
+            <select class="form-control">
+              <option *ngFor="let i of city"[value]="i">{{i}}</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label>ON :</label>
+            <input type="date" class="form-control">
+        </div>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+        <br>
+        <h2>Available Flights :</h2>
+        <div class="grid-container1" *ngFor="let n of count">
+            <div class="grid-item1">
+            Flight Number:<br>
+            Carrier Name:<br>
+            Departure:<br>
+            Arrival:<br>
+            Cost:<br>
+            <nav>
+                <a routerLink="/confirmbooking" class="btn btn-success">Book Now</a> 
+            </nav>
+            <router-outlet></router-outlet>
+            </div>
+        </div>
+    </form>
+</div>
+
